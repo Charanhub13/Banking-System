@@ -44,8 +44,8 @@ import java.util.Scanner;
 	                    }
 	                    bank.createAccount(acc);
 	                    break;
-	                    
-	                    
+
+
 	                case 2:
 	                    System.out.print("Enter Acc No: ");
 	                    accNo = sc.next();
@@ -86,7 +86,7 @@ import java.util.Scanner;
 	                    } else {
 	                        System.out.println("Account not found!");
 	                    }
-	                    
+
 	                    break;
 
 	                case 6:

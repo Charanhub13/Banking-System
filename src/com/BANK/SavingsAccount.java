@@ -6,12 +6,14 @@ public class SavingsAccount extends BankAccount{
 	    public SavingsAccount(String accNo, String name, double balance) {
 	        super(accNo, name, balance);
 	    }
-	    
-	    public String getAccountType() {
+
+	    @Override
+		public String getAccountType() {
 	        return "Savings";
 	    }
 
-	    void withdraw(double amount) {
+	    @Override
+		void withdraw(double amount) {
 	    	if (amount <= 0) {
 	    	    System.out.println("Invalid amount!");
 	    	    return;

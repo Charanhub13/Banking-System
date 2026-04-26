@@ -6,15 +6,16 @@ import java.util.Map;
 	    private Map<String, BankAccount> accounts = new HashMap<>();
 
 	    public void createAccount(BankAccount account) {
+	    	 if (accounts.containsKey(account.getAccountNumber())) {
+		            System.out.println("Account already exists!");
+		            return;
+		        }
 	        accounts.put(account.getAccountNumber(), account);
 	        System.out.println("Account created successfully!");
-	        if (accounts.containsKey(account.getAccountNumber())) {
-	            System.out.println("Account already exists!");
-	            return;
-	        }
+	       
 	    }
 
-	    
+
 	    public BankAccount getAccount(String accNo) {
 	        return accounts.get(accNo);
 	    }
